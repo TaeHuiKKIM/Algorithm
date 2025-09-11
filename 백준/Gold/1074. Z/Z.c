@@ -3,13 +3,10 @@
 int count = 0; // 전역변수 초기화
 int r, c;
 
-int search(int x, int y, int n) { // long long -> int
+int search(int x, int y, int n) { 
     if (n == 1) {
         if (x == r && y == c) {
             return 1; // 찾았을 때 1 반환
-        } else {
-            count++;
-            return 0; // 못 찾았을 때 0 반환
         }
     } else {
         int half = n / 2;
